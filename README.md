@@ -95,4 +95,4 @@ Title Photo is free. If it saves you time you can [buy me a coffee ☕](https://
 
 ## License
 
-Free to use. *(Add a `LICENSE` file to choose the exact terms, e.g. MIT.)*
+Free to use.
