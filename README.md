@@ -53,22 +53,6 @@ The packaged app needs nothing else: Python, Tk and all libraries are bundled in
 2. The app is not signed by Apple. On the first launch, **right-click → Open**.
 3. Install ExifTool (see above) and Ollama or get a Gemini key.
 
-### Option B — build the app yourself
-
-```bash
-git clone <this repository>
-cd <this repository>
-bash build_app.sh
-```
-
-The finished app appears in `dist/Title Photo.app`. It is built for the CPU type of the Mac that builds it (Apple Silicon or Intel). Python with Tk support is required (python.org installer, or `brew install python-tk`).
-
-### Option C — run from source
-
-```bash
-python3 -m pip install pillow certifi
-python3 ver_XXXXXXXXXXXX.py
-```
 
 ## Quick start
 
