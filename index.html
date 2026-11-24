@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Title Photo - AI titles, descriptions and keywords for your photos</title>
+<meta name="description" content="Title Photo writes titles, descriptions and SEO keywords into your photos with a local or cloud AI. For Lightroom Classic and macOS.">
+<link rel="icon" href="icon.png">
+<style>
+:root{
+  --bg:#f7f8fb; --card:#ffffff; --text:#171a22; --muted:#5b6170; --line:#e3e6ee;
+  --accent:#0f8fd0; --accent-ink:#ffffff; --green:#1c8f55; --purple:#7d3c98; --amber:#c9740a;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#14141b; --card:#1d1d27; --text:#f0f0f5; --muted:#a2a3b8; --line:#2f2f40;
+         --accent:#38bdf8; --accent-ink:#0b1220; --green:#34c77b; --purple:#b07ad0; --amber:#f0a040; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;align-items:center;gap:20px;padding:18px 0}
+nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text);text-decoration:none}
+nav .brand img{width:34px;height:34px;border-radius:8px}
+nav .links{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}
+nav .links a{color:var(--muted);text-decoration:none;font-size:15px}
+nav .links a:hover{color:var(--text)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:56px 0 40px}
+.hero h1{font-size:clamp(32px,5vw,50px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+.hero h1 span{color:var(--accent)}
+.hero p.lead{font-size:19px;color:var(--muted);margin:0 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.hero .art{display:flex;justify-content:center}
+.hero .art img{width:min(280px,70%);border-radius:28%;box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.note{color:var(--muted);font-size:14px;margin-top:14px}
+section{padding:44px 0}
+h2{font-size:28px;margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 26px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted)}
+.num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-weight:700;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tag{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.t1{color:var(--accent)}.t2{color:var(--green)}.t3{color:var(--purple)}.t4{color:var(--amber)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-size:15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:28px 0 46px;color:var(--muted);font-size:14px}
+footer .row{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+footer .row a{color:var(--muted)}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:24px}.hero .art{order:-1}
+  .steps,.grid,.two{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#top"><img src="icon.png" alt="">Title Photo</a>
+    <div class="links"><a href="#how">How it works</a><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a><a href="#download">Download</a></div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <h1>Titles, descriptions and keywords for your photos. <span>Written by AI.</span></h1>
+      <p class="lead">Title Photo looks at each image and saves the title, description and SEO keywords straight into your files or your Lightroom catalog. Ready for Adobe Stock, Shutterstock, Etsy, your shop or social media.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://github.com/teiresias777/TITLE-PHOTO/releases/latest">Download Title Photo</a>
+        <a class="btn" href="#how">See how it works</a>
+      </div>
+      <p class="note">Free. A plugin for Lightroom Classic and an app for macOS.</p>
+    </div>
+    <div class="art"><img src="icon.png" alt="Title Photo icon"></div>
+  </header>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <p class="sub">Three steps, and no typing of keywords.</p>
+    <div class="steps">
+      <div class="card"><div class="num">1</div><h3>Choose your photos</h3><p>Select photos in Lightroom Classic, or pick a folder of RAW and JPG files in the app.</p></div>
+      <div class="card"><div class="num">2</div><h3>Pick a preset</h3><p>Choose where the photos will be used. Title Photo applies that platform's limits and writing tips.</p></div>
+      <div class="card"><div class="num">3</div><h3>Press Start</h3><p>Watch the results appear with a preview of each photo. Edit anything, or undo the whole batch with one click.</p></div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Made for working photographers</h2>
+    <p class="sub">The details that save hours.</p>
+    <div class="grid">
+      <div class="card"><div class="tag t1">Two AI engines</div><h3>Local or cloud</h3><p>Run a free, private model on your computer with Ollama, or use Google Gemini with your own API key.</p></div>
+      <div class="card"><div class="tag t2">Platform presets</div><h3>The right limits</h3><p>Character limits and keyword counts for each platform, plus that platform's own advice on what to write first.</p></div>
+      <div class="card"><div class="tag t3">Real sentences</div><h3>Never cut mid-sentence</h3><p>Texts that are too long or too short are rewritten until they fit. No repeated words in a title.</p></div>
+      <div class="card"><div class="tag t4">Your words</div><h3>Context and rules</h3><p>Tell the AI the place or event, always add chosen keywords, and never use the ones you ban.</p></div>
+      <div class="card"><div class="tag t1">Safe</div><h3>Undo and backups</h3><p>The original data is kept before every batch, so one click restores it.</p></div>
+      <div class="card"><div class="tag t2">Two languages</div><h3>English or Greek</h3><p>Write in either language, with five writing styles and an optional custom prompt.</p></div>
+    </div>
+  </section>
+
+  <section id="platforms">
+    <h2>Presets for the places you sell and share</h2>
+    <p class="sub">Each one with its own limits.</p>
+    <div class="chips">
+      <span>Adobe Stock</span><span>Shutterstock</span><span>Etsy</span><span>Google Shopping</span><span>WooCommerce</span><span>Instagram</span><span>Facebook</span><span>Pinterest</span><span>Flickr / 500px</span><span>Blog / SEO</span><span>Alt text</span><span>Your own presets</span>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <h2>Your photos stay yours</h2>
+    <p class="sub">You decide what leaves your computer.</p>
+    <div class="two">
+      <div class="card"><h3>Local (Ollama)</h3><p>Photos, requests and answers never leave your computer. Free to use.</p></div>
+      <div class="card"><h3>Cloud (Google Gemini)</h3><p>Only a small preview of each photo and the text request are sent to Google, and only if you choose this engine. Your API key stays on your computer.</p></div>
+    </div>
+    <p class="note">No tracking, no analytics, no account. <a href="PRIVACY.md">Read the privacy notes</a>.</p>
+  </section>
+
+  <section id="download">
+    <h2>Download</h2>
+    <p class="sub">Free to use.</p>
+    <div class="two">
+      <div class="card"><h3>Lightroom Classic plugin</h3><p>Unzip, then in Lightroom: File &rarr; Plug-in Manager &rarr; Add. Works on macOS and Windows. Needs Ollama or a Gemini API key.</p><p style="margin-top:14px"><span class="btn" style="opacity:.6;cursor:default">Coming soon (beta)</span></p></div>
+      <div class="card"><h3>App for macOS</h3><p>A standalone app for folders of RAW and JPG files, with an Inspector, Pause and CSV export. Needs ExifTool and Ollama or a Gemini API key.</p><p style="margin-top:14px"><a class="btn primary" href="https://github.com/teiresias777/TITLE-PHOTO/releases/latest">Get the app</a></p></div>
+    </div>
+    <p class="note">You also need <a href="https://ollama.com/download">Ollama</a> or a <a href="https://aistudio.google.com/apikey">Gemini API key</a>.</p>
+  </section>
+
+  <section id="faq">
+    <h2>Questions</h2>
+    <details><summary>Is it really free?</summary><p>Yes. The cloud engine uses your own Google API key, and Google's prices and free limits apply to it. The local engine has no cost.</p></details>
+    <details><summary>Does it change my original photos?</summary><p>The Lightroom plugin writes to your catalog. The macOS app writes an XMP sidecar next to RAW files, which are never touched, and inside JPG files. Every batch can be undone.</p></details>
+    <details><summary>Which AI model should I use?</summary><p>For the local engine, a vision model such as qwen2.5vl:7b works well. Smaller computers can use the 3b version, which is faster but less accurate. Gemini gives the most consistent results.</p></details>
+    <details><summary>Why is the free Gemini tier slow?</summary><p>Google limits the number of free requests per minute. Title Photo paces itself to stay inside the limit. The paid plan can process several photos at once.</p></details>
+    <details><summary>Does it work with the cloud-based Lightroom?</summary><p>No. The plugin is for Lightroom Classic. The macOS app works with files and can be used with any catalog.</p></details>
+  </section>
+
+  <footer>
+    <div class="row">
+      <span>&copy; 2026 Lambros Kazan</span>
+      <a href="https://www.lambroskazan.com">Website</a>
+      <a href="LICENSE">License (MIT)</a>
+      <a href="PRIVACY.md">Privacy</a>
+      <a href="CHANGELOG.md">Changelog</a>
+      <a href="https://buymeacoffee.com/lambroskazan">Support the project</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
